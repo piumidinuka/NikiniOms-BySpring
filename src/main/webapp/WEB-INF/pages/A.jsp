@@ -23,6 +23,6 @@
 
 <body>
 	<h2>Message : ${message}</h2>
-	<p class="msg">Add html css</p>
+	<p class="msg">Add html css as resources</p>
 </body>
 </html>
