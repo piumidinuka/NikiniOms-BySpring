@@ -12,6 +12,7 @@ public class BaseController {
 
 	private static int counter = 0;
 	private static final String VIEW_INDEX = "index";
+	private static final String VIEW_INDEX1 = "A";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(BaseController.class);
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
@@ -22,7 +23,7 @@ public class BaseController {
 		logger.debug("[welcome] counter : {}", counter);
 
 		// Spring uses InternalResourceViewResolver and return back index.jsp
-		return VIEW_INDEX;
+		return VIEW_INDEX1;
 
 	}
 
