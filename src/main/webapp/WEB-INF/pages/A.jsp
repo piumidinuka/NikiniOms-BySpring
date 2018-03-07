@@ -6,23 +6,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 
-<%-- <spring:url value="/resources/css/main.css" var="mainCss" />
-<spring:url value="/resources/js/jquery.1.10.2.min.js" var="jqueryJs" />
-<spring:url value="/resources/js/main.js" var="mainJs" />
 
-<link href="${mainCss}" rel="stylesheet" />
-<script src="${jqueryJs}"></script>
-<script src="${mainJs}"></script> --%>
-
-
-<link href="${pageContext.request.contextPath}/resources/css/style.css"
-    rel="stylesheet">
+<link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet" >
 
 </head> 
- <!-- <link rel="stylesheet" type="text/css" href="styles.css">  -->
+
 
 <body>
 	<h2>Message : ${message}</h2>
-	<p class="msg">Add html css as resources</p>
+	<p>I am piuimi reday to start with spring</p>
+	<p>I am kushan</p>
+	<div id="msg">
+	 <p>This is red div</p>
+	</div>
+	<div class="msg1">
+	 <p>This is blue div</p>
+	 <p>a is : ${a}<p>
+	</div>
 </body>
 </html>

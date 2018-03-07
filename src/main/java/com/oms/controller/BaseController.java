@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.oms.model.Db_connection;
+
 @Controller
 public class BaseController {
 
@@ -21,6 +23,9 @@ public class BaseController {
 		model.addAttribute("message", "Welcome");
 		model.addAttribute("counter", --counter);
 		logger.debug("[welcome] counter : {}", counter);
+		
+		Db_connection db_connection=new Db_connection();
+		int a=db_connection.retrive_data();
 
 		// Spring uses InternalResourceViewResolver and return back index.jsp
 		return VIEW_INDEX1;
